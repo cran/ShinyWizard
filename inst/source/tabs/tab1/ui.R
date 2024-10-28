@@ -1,0 +1,33 @@
+# --- Navigation ---
+# TabName: Welcome
+# TabIcon: home
+
+# --- Next/Prev buttons
+# ShowButtons: FALSE
+
+# --- Info ---
+# InfoTitle: tir
+# InfoMessage: mes
+
+fluidPage(
+  fluidRow(
+     HTML('<center><h1>Welcome!</h1>
+      <p>If you\'re seeing this page, that means Shiny Wizard is installed and running. 
+      <strong>Congratulations!</strong> 
+      </p>Start new project 
+      '),
+     br(),
+     br(),
+        next_prev_button(1,2, NextName = "New Project"),
+     br(),
+     br(),
+     p("or edit an existing (*.zip)"),
+     br(),
+        fileInput(ns("UploadProjectFile"), NULL, accept = ".zip", multiple = FALSE),
+     HTML("</center>"),
+     verbatimTextOutput(ns('contents'))
+ )
+)
+
+
+# zawsze ns() do id !!!!! lacznie z output każdy id z ns() !!!!!

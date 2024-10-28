@@ -1,0 +1,11 @@
+# --- App Titles ---
+AppTitle: Shiny Wizard    # when "" is not displayed !!!
+AppSubTitle: Design, build, deploy! # when "" is not displayed !!!
+# --- CSS style ---
+ShinyWizzardTheme: flatly
+# --- Logo ---
+LogoFilePath: img/logo.png  # when "" is not displayed !!!
+# --- Navigation ---
+NavTabName: ⚪
+# --- Footer ---
+FooterText: 
